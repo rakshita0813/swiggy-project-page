@@ -1,0 +1,5 @@
+.pocket_section{
+    display: flex;
+    overflow-x:hidden;
+    padding-bottom:21px;
+}

@@ -1,0 +1,370 @@
+a {
+  cursor: pointer;
+  text-decoration: none
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/Proxima Nova Font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "proxima-nova";
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.logo {
+  width: 11rem;
+}
+
+.navbar {
+
+  ul {
+    li {
+      display: inline-block;
+      font-weight: 600;
+      padding: .7rem 1.7rem;
+
+      &:hover {
+        box-shadow: 0px 5px 7px rgba(65, 65, 65, 0.267);
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
+
+
+.navlinks {
+  font-size: 1.05rem;
+}
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.firsthalf {
+  width: 55%;
+  height: 32rem;
+  padding-left: 10rem;
+  padding-top: 4rem;
+  z-index: 10;
+
+
+}
+
+.scaleAnimation {
+  animation: change 200ms ease-in;
+  transition: background 100ms;
+}
+
+@keyframes change {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cities-heading {
+  margin-bottom: 0.7rem;
+  font-size: .9rem;
+  color: #a9abb2;
+  font-weight: 500;
+}
+
+.location-cover {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c5c5c5;
+  width: 90%;
+  height: 4rem;
+  background-color: white;
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
+
+  .findfood_btn {
+    background-color: #fc8018;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    padding: 0px 1em;
+    font-size: 0.95em;
+    flex-basis: 9rem;
+    cursor: pointer;
+
+    a {
+      color: inherit;
+    }
+
+    &:active {
+      background: #d86d16;
+    }
+  }
+
+  .locateme_btn {
+    background-color: rgb(226, 226, 226);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    padding: 0 1px;
+    margin: .8rem .5rem;
+    color: grey;
+    flex-basis: 6rem;
+    border-radius: .3rem;
+    transition: all 100ms;
+    cursor: pointer;
+
+    a {
+      color: rgb(85, 85, 85);
+      // padding: 10px 6px;
+      border-radius: 2px;
+      width: 200%;
+      font-weight: normal;
+
+      &:active {
+        background-color: rgb(233, 233, 233);
+      }
+
+    }
+  }
+
+  input {
+    padding-left: 1.3rem;
+    width: 23rem;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    color: #282C3F;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::-webkit-input-placeholder {
+      color: rgb(138, 138, 138);
+      text-transform: none;
+    }
+  }
+}
+
+
+.heading {
+  margin-top: 4rem;
+
+  font-size: 2.4rem;
+
+  font-weight: 600;
+  color: #282c3f;
+}
+
+.subheading {
+  color: #818383;
+  padding-top: .4rem;
+  font-size: 1.45rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #74757c;
+}
+
+
+.city {
+  font-size: 1rem !important;
+}
+
+
+.secondhalf {
+  width: 45%;
+  height: 32rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+
+    width: 43.3rem;
+  }
+}
+
+
+// MEDIA QUERY FOR SIZE 800PX
+
+@media (max-width:1300px) {
+  .firsthalf {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width:1150px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+
+  .location-cover {
+    margin-bottom: 3rem;
+
+    input {
+      font-size: 1.1rem;
+    }
+  }
+
+  .cities-box {
+    width: 91.1%;
+  }
+
+
+  .tag-body ul {
+    width: 10.5rem;
+  }
+
+  .location-cover {
+    height: 3.4rem;
+
+    input {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+@media (max-width:950px) {
+  .secondhalf {
+    opacity: 0;
+    display: none;
+  }
+
+  .firsthalf {
+    padding-left: 7%;
+    padding-right: 5%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.7), rgb(255, 255, 255)), url('https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Dinner3-new_sacgrd');
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.3rem;
+  }
+
+  .location-cover {
+    width: 92%;
+    height: 3.5rem;
+
+    .findfood_btn {
+      font-size: .8rem;
+    }
+  }
+
+  .logo {
+    width: 8.5rem;
+  }
+
+  .navlinks {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    width: 92%;
+    height: 100%;
+  }
+
+  .cities-box {
+    width: 92%;
+  }
+}
+
+
+@media (max-width:601px) {
+  .location-cover {
+    width: 101%;
+    margin-bottom: 3rem;
+
+    .locateme_btn {
+      a {
+        // padding: 7px 2px;
+        font-size: .7rem;
+      }
+    }
+
+    .findfood_btn {
+      font-size: 0.8rem;
+    }
+
+  }
+
+  .heading {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-size: 1.7rem;
+    padding-left: 2.4rem;
+  }
+
+  .subheading {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navlinks {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 7.4rem;
+  }
+
+  .cities-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cities-heading {
+    margin-bottom: 1.1rem;
+    font-size: .9rem;
+    color: #a9abb2;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .firsthalf {
+    padding-left: 3.5%;
+  }
+
+  .features-body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,165 @@
+.app-body {
+  width: 100%;
+  // height: 36rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+
+}
+
+.text-section {
+  // background-color: antiquewhite;
+  width: 30%;
+  height: 47%;
+  font-size: 4rem;
+
+  h1 {
+    font-size: 64%;
+    font-weight: 600;
+    line-height: 2.6rem;
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    margin-bottom: 3rem;
+    font-size: 31.5%;
+    font-weight: 500;
+    color: #7e808c;
+    width: 89%;
+  }
+}
+
+.app-btn {
+  width: 43%;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.photo-section {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  // height: 36rem;
+  // background-color: red;
+
+  img {
+    width: 50%;
+  }
+
+  // .photo1 {}
+
+  .photo2 {
+    padding-top: 5.5rem;
+  }
+}
+
+
+@media (max-width:1300px) {
+  .text-section {
+    h1 {
+      width: 80%;
+    }
+  }
+
+  .photo-section .photo2 {
+    padding-top: 10.2rem;
+  }
+
+}
+
+
+@media (max-width:1100px) {
+
+  .app-body {
+    // height: 27.1rem;
+    gap: 6%;
+  }
+
+  .app-btn {
+    width: 47%;
+  }
+
+  .photo-section {
+    width: 46%;
+    // height: 29rem;
+  }
+
+  .text-section {
+    h1 {
+      font-size: 46%;
+      width: 85%;
+      line-height: normal;
+    }
+
+    h3 {
+      font-size: 23.7%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+
+@media (max-width:900px) {
+  .app-btn {
+    width: 50%;
+  }
+}
+
+
+@media (max-width:700px) {
+  .app-btn {
+    width: 50%;
+  }
+
+  .text-section h1 {
+
+    font-size: 35%;
+    line-height: 115%;
+  }
+
+  .text-section {
+
+    width: 35%;
+
+    h3 {
+      font-size: 21%;
+    }
+  }
+}
+
+
+@media (max-width:548px) {
+
+  .text-section {
+    &-btns {
+      padding-top: 0.8rem;
+      display: flex;
+      flex-direction: row;
+      grid-gap: 1%;
+      gap: 4%;
+      height: 2.7rem;
+    }
+
+    h1 {
+      font-size: 28%;
+      line-height: 115%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .text-section {
+    padding-top: 2rem;
+    width: 35%;
+
+    h3 {
+      font-size: 19%
+    }
+  }
+
+  .app-btn {
+    padding: 0;
+    width: 93%;
+  }
+}

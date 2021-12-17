@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.footer_div{
+    overflow-x: hidden;
+    background-color:#000;
+    margin-top:80px;
+    padding:75px 65px;
+}
+@media(max-width:769px){
+    .footer_div{
+        padding: 20px 10px;
+
+    }
+} 
+    

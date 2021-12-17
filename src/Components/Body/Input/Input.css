@@ -1,0 +1,32 @@
+.input_div{
+    border: 1px solid coral;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0;
+}
+.input_div>*{
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+.input_div>input{
+    border: none;
+    width: 60%;
+    padding: 0px 20px;
+}
+.input_div>input:focus{
+    border: none;
+    outline: none;
+}
+@media(max-width:720px){
+    .input_div{
+        flex-wrap: wrap;
+    }
+    .input_div>input{
+        width: 100%;
+    }
+}
+@media(max-width:650px){
+    .input_div{
+        width: 70%;
+    }   
+}

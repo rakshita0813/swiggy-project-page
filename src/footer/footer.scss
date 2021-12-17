@@ -1,0 +1,261 @@
+.footer-body {
+  width: 100%;
+  height: 54rem;
+  padding-top: 5%;
+  background-color: rgb(0, 0, 0);
+}
+
+.company-tags {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tag-body {
+  color: white;
+  font-size: 2.3em;
+
+  h3 {
+    color: gray;
+    font-size: .9rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    width: 15.5rem;
+
+
+    li {
+      font-size: 45.5%;
+      padding: .6rem 0;
+    }
+  }
+}
+
+.tag-li {
+  font-weight: 400;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20%;
+  width: 20%;
+  align-items: center;
+
+  .btn-container {
+    width: 90%;
+    height: 17%;
+    padding-top: .08rem;
+    text-align: center;
+    border-radius: 10px;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    img {
+      width: 99%;
+    }
+  }
+}
+
+.footer-citySection {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h3 {
+    color: gray;
+    font-size: .9rem;
+    font-weight: 700;
+
+    padding-bottom: 1.4rem;
+    text-transform: uppercase;
+    flex: 0 0 100%;
+  }
+
+}
+
+.footer-bottom {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 5%;
+
+
+  &_logo-container {
+    width: 25%;
+
+    img {
+      width: 55%;
+    }
+  }
+
+
+  h3 {
+    width: 42%;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-right: 8rem;
+    font-size: 118%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: red;
+    width: 17%;
+    height: 10%;
+
+    a {
+      width: auto;
+      padding: 0;
+      width: 13%;
+      text-align: right;
+
+      // background-color: blue;
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width:1200px) {
+  .footer-body {
+    height: auto;
+    padding-bottom: 2.5rem;
+  }
+
+  .location-cover {
+    margin-bottom: 4rem;
+
+    input {
+      font-size: 0.85rem;
+
+    }
+  }
+
+  .footer-bottom {
+    h3 {
+      font-size: 100%;
+      padding-right: 4rem;
+    }
+  }
+
+  .company-tags {
+    justify-content: space-between;
+    height: 33.6rem;
+  }
+
+  .footer-btn {
+    flex-direction: row;
+    width: 108%;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 24%;
+
+    .btn-container {
+      width: 65%;
+
+      img {
+        width: 72%;
+      }
+    }
+  }
+}
+
+@media (max-width:930px) {
+
+  .company-tags {
+    justify-content: space-between;
+    height: 41.6rem;
+  }
+
+  .footer-btn {
+    flex-direction: column;
+    width: 37%;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 20%;
+
+    .btn-container {
+      width: 65%;
+
+      img {
+        width: 92%;
+      }
+    }
+  }
+}
+
+@media (max-width: 593px) {
+
+  .footer-body {
+    padding-top: 4.3rem;
+  }
+
+  .company-tags {
+    justify-content: space-between;
+    width: 80%;
+    height: 43rem;
+  }
+
+  .footer-btn {
+    flex-direction: column;
+    gap: 9%;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  .footer-bottom {
+    h3 {
+      font-size: 80%;
+      padding-right: 0.6rem;
+    }
+
+    &_logo-container {
+      img {
+        width: 83%;
+      }
+    }
+
+    .social-links {
+      width: 27%;
+    }
+  }
+
+  .tag-body ul {
+    width: 11.5rem;
+  }
+}

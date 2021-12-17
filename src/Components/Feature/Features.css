@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+}
+.feature{
+    background-color: #2b1e16;
+    display: flex;
+    
+}
+@media(max-width:1000px){
+    .feature{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:20px 10px;
+    }
+}

@@ -1,0 +1,357 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/Proxima Nova Font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "proxima-nova";
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.logo {
+  width: 11rem;
+}
+
+.navbar ul li {
+  display: inline-block;
+  font-weight: 600;
+  padding: .7rem 1.7rem;
+}
+
+.navbar ul li:hover {
+  -webkit-box-shadow: 0px 5px 7px rgba(65, 65, 65, 0.267);
+          box-shadow: 0px 5px 7px rgba(65, 65, 65, 0.267);
+  cursor: pointer;
+}
+
+.navlinks {
+  font-size: 1.05rem;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firsthalf {
+  width: 55%;
+  height: 32rem;
+  padding-left: 10rem;
+  padding-top: 4rem;
+  z-index: 10;
+}
+
+.scaleAnimation {
+  -webkit-animation: change 200ms ease-in;
+          animation: change 200ms ease-in;
+  -webkit-transition: background 100ms;
+  transition: background 100ms;
+}
+
+@-webkit-keyframes change {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes change {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.cities-heading {
+  margin-bottom: 0.7rem;
+  font-size: .9rem;
+  color: #a9abb2;
+  font-weight: 500;
+}
+
+.location-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #c5c5c5;
+  width: 90%;
+  height: 4rem;
+  background-color: white;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 2rem;
+}
+
+.location-cover .findfood_btn {
+  background-color: #fc8018;
+  color: white;
+  font-weight: 700;
+  border: 0;
+  padding: 0px 1em;
+  font-size: 0.95em;
+  -ms-flex-preferred-size: 9rem;
+      flex-basis: 9rem;
+  cursor: pointer;
+}
+
+.location-cover .findfood_btn a {
+  color: inherit;
+}
+
+.location-cover .findfood_btn:active {
+  background: #d86d16;
+}
+
+.location-cover .locateme_btn {
+  background-color: #e2e2e2;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  padding: 0 1px;
+  margin: .8rem .5rem;
+  color: grey;
+  -ms-flex-preferred-size: 6rem;
+      flex-basis: 6rem;
+  border-radius: .3rem;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.location-cover .locateme_btn a {
+  color: #555555;
+  border-radius: 2px;
+  width: 200%;
+  font-weight: normal;
+}
+
+.location-cover .locateme_btn a:active {
+  background-color: #e9e9e9;
+}
+
+.location-cover input {
+  padding-left: 1.3rem;
+  width: 23rem;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  color: #282C3F;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.location-cover input::-webkit-input-placeholder {
+  color: #8a8a8a;
+  text-transform: none;
+}
+
+.heading {
+  margin-top: 4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #282c3f;
+}
+
+.subheading {
+  color: #818383;
+  padding-top: .4rem;
+  font-size: 1.45rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #74757c;
+}
+
+.city {
+  font-size: 1rem !important;
+}
+
+.secondhalf {
+  width: 45%;
+  height: 32rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.secondhalf img {
+  width: 43.3rem;
+}
+
+@media (max-width: 1300px) {
+  .firsthalf {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+  .subheading {
+    font-size: 1.25rem;
+  }
+  .location-cover {
+    margin-bottom: 3rem;
+  }
+  .location-cover input {
+    font-size: 1.1rem;
+  }
+  .cities-box {
+    width: 91.1%;
+  }
+  .tag-body ul {
+    width: 10.5rem;
+  }
+  .location-cover {
+    height: 3.4rem;
+  }
+  .location-cover input {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .secondhalf {
+    opacity: 0;
+    display: none;
+  }
+  .firsthalf {
+    padding-left: 7%;
+    padding-right: 5%;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.7)), to(white)), url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Dinner3-new_sacgrd");
+    background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.7), white), url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Dinner3-new_sacgrd");
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .subheading {
+    font-size: 1.3rem;
+  }
+  .location-cover {
+    width: 92%;
+    height: 3.5rem;
+  }
+  .location-cover .findfood_btn {
+    font-size: .8rem;
+  }
+  .logo {
+    width: 8.5rem;
+  }
+  .navlinks {
+    font-size: 0.95rem;
+  }
+  .navbar {
+    width: 92%;
+    height: 100%;
+  }
+  .cities-box {
+    width: 92%;
+  }
+}
+
+@media (max-width: 601px) {
+  .location-cover {
+    width: 101%;
+    margin-bottom: 3rem;
+  }
+  .location-cover .locateme_btn a {
+    font-size: .7rem;
+  }
+  .location-cover .findfood_btn {
+    font-size: 0.8rem;
+  }
+  .heading {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-size: 1.7rem;
+    padding-left: 2.4rem;
+  }
+  .subheading {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navlinks {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 7.4rem;
+  }
+  .cities-box {
+    width: 100%;
+    text-align: center;
+  }
+  .cities-heading {
+    margin-bottom: 1.1rem;
+    font-size: .9rem;
+    color: #a9abb2;
+    font-weight: 500;
+    text-align: center;
+  }
+  .firsthalf {
+    padding-left: 3.5%;
+  }
+  .features-body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

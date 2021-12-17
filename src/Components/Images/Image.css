@@ -1,0 +1,48 @@
+.main_img{
+    float: right;
+    width:700px;
+    height: 500px;
+}
+.swiggy_logo{
+    height:60px;
+}
+
+.feature-img{
+    height:200px;
+}
+.img-play{
+    padding:10px;
+}
+
+.left_img{
+    height:500px;
+    position:absolute;
+    right:500px;
+
+}
+.right_img{
+    height:500px;
+    position:absolute;
+    right:150px;
+    margin-top:17px;
+}
+.footer-swiggy{
+    padding:20px;
+    height:42px;
+
+}
+.social-media{
+    height:20px;
+    padding:22px;   
+}
+.social-media:hover{
+    background-color: red;
+}
+
+@media(max-width:1000px){
+    .left_img, .right_img,.main_img{
+        display: none;
+    }
+
+
+}
